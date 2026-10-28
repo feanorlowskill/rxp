@@ -1,0 +1,8 @@
+## Interface: 16001
+## Title: RXP - Undead Mage Custom Route 1-12
+## Notes: Russian custom leveling route for Undead Mage on WoW Forever
+## Author: feanorlowskill
+## Version: 0.1.0
+## Dependencies: RXPGuides
+
+UndeadMageCustom.lua
