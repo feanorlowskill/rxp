@@ -1,0 +1,20 @@
+name: Validate RXP route
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-route:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run static route validation
+        run: python tests/validate_route.py
